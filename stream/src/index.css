@@ -1,0 +1,65 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+button{
+  color: white;
+}
+
+
+/* styles/index.css */
+#progress {
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f3f3f3;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#progress::-webkit-progress-bar {
+  background-color: #f3f3f3;
+}
+
+#progress::-webkit-progress-value {
+  background-color: #36e010; /* Green color */
+  transition: width 0.25s; /* Animation duration */
+}
+
+#progress::-moz-progress-bar {
+  background-color: #2ef935; /* Green color */
+  transition: width 0.25s; /* Animation duration */
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
